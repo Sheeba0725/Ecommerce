@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="task3.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="a1">
+        <h3 class="a11">Username:</h3>
+        <input type="text" id="name">
+    </div>
+    <div class="a2">
+        <h3 class="a21">Password:</h3>
+        <input type="text" id="number">
+    </div>
+    <button onclick="sample()">click</button>
+         <p id="result"></p>
+
+
+        <script>
+            
+
+            function sample(){
+                let a=document.getElementById("name").value
+                let b=document.getElementById("number").value
+                if(a=="admin" && b=="12345"){
+                    console.log("login successful");
+                    document.getElementById("result").innerHTML="login successful"
+                    
+                }else{
+                    console.log("invalid credentials");
+                    document.getElementById("result").innerHTML="invalid credentials"
+
+                }
+                
+            }
+
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
